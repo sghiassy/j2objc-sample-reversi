@@ -1,0 +1,19 @@
+{
+  "name": "reversi",
+  "version": "1.0.0",
+  "description": "j2objc-sample-reversi =====================",
+  "main": "index.js",
+  "scripts": {
+    "x": "open ios/J2Reversi.xcodeproj"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sghiassy/j2objc-sample-reversi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sghiassy/j2objc-sample-reversi/issues"
+  },
+  "homepage": "https://github.com/sghiassy/j2objc-sample-reversi#readme"
+}

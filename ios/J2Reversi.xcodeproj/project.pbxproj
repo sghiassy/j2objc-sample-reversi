@@ -29,14 +29,14 @@
 		0683A314163DE1C800407C3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0683A313163DE1C800407C3A /* CoreGraphics.framework */; };
 		3D9F90491934DA2F00738699 /* J2RViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9F90451934DA2F00738699 /* J2RViewController_iPad.xib */; };
 		3D9F904A1934DA2F00738699 /* J2RViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9F90471934DA2F00738699 /* J2RViewController_iPhone.xib */; };
-		AA2B5EC21F84B38A00133A49 /* Engine.java in Sources */ = {isa = PBXBuildFile; fileRef = AA2B5EBA1F84B38A00133A49 /* Engine.java */; };
-		AA2B5EC31F84B38A00133A49 /* Position.java in Sources */ = {isa = PBXBuildFile; fileRef = AA2B5EBB1F84B38A00133A49 /* Position.java */; };
-		AA2B5EC41F84B38A00133A49 /* CommandInterfaceListener.java in Sources */ = {isa = PBXBuildFile; fileRef = AA2B5EBC1F84B38A00133A49 /* CommandInterfaceListener.java */; };
-		AA2B5EC51F84B38A00133A49 /* CommandInterface.java in Sources */ = {isa = PBXBuildFile; fileRef = AA2B5EBD1F84B38A00133A49 /* CommandInterface.java */; };
-		AA2B5EC61F84B38A00133A49 /* Move.java in Sources */ = {isa = PBXBuildFile; fileRef = AA2B5EBE1F84B38A00133A49 /* Move.java */; };
-		AA2B5EC71F84B38A00133A49 /* Score.java in Sources */ = {isa = PBXBuildFile; fileRef = AA2B5EBF1F84B38A00133A49 /* Score.java */; };
-		AA2B5EC81F84B38A00133A49 /* Game.java in Sources */ = {isa = PBXBuildFile; fileRef = AA2B5EC01F84B38A00133A49 /* Game.java */; };
-		AA2B5EC91F84B38A00133A49 /* SuperEngine.java in Sources */ = {isa = PBXBuildFile; fileRef = AA2B5EC11F84B38A00133A49 /* SuperEngine.java */; };
+		AA2B5EF41F84B57900133A49 /* Score.java in Sources */ = {isa = PBXBuildFile; fileRef = AA2B5EEC1F84B57800133A49 /* Score.java */; };
+		AA2B5EF51F84B57900133A49 /* CommandInterfaceListener.java in Sources */ = {isa = PBXBuildFile; fileRef = AA2B5EED1F84B57800133A49 /* CommandInterfaceListener.java */; };
+		AA2B5EF61F84B57900133A49 /* Move.java in Sources */ = {isa = PBXBuildFile; fileRef = AA2B5EEE1F84B57800133A49 /* Move.java */; };
+		AA2B5EF71F84B57900133A49 /* Position.java in Sources */ = {isa = PBXBuildFile; fileRef = AA2B5EEF1F84B57900133A49 /* Position.java */; };
+		AA2B5EF81F84B57900133A49 /* SuperEngine.java in Sources */ = {isa = PBXBuildFile; fileRef = AA2B5EF01F84B57900133A49 /* SuperEngine.java */; };
+		AA2B5EF91F84B57900133A49 /* Game.java in Sources */ = {isa = PBXBuildFile; fileRef = AA2B5EF11F84B57900133A49 /* Game.java */; };
+		AA2B5EFA1F84B57900133A49 /* CommandInterface.java in Sources */ = {isa = PBXBuildFile; fileRef = AA2B5EF21F84B57900133A49 /* CommandInterface.java */; };
+		AA2B5EFB1F84B57900133A49 /* Engine.java in Sources */ = {isa = PBXBuildFile; fileRef = AA2B5EF31F84B57900133A49 /* Engine.java */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -49,7 +49,7 @@
 				"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.m",
 				"${DERIVED_FILES_DIR}/${INPUT_FILE_BASE}.h",
 			);
-			script = "if [ ! -f \"${J2OBJC_HOME}/j2objc\" ]; then echo \"J2OBJC_HOME not correctly defined in Settings.xcconfig, currently set to '${J2OBJC_HOME}'\"; exit 1; fi;\n\"${J2OBJC_HOME}/j2objc\" -d ${DERIVED_FILES_DIR} -sourcepath \"${PROJECT_DIR}/Classes\" --no-package-directories -use-arc --prefix Othello=JOE -g ${INPUT_FILE_PATH};";
+			script = "if [ ! -f \"${J2OBJC_HOME}/j2objc\" ]; then\n    echo \"J2OBJC_HOME not correctly defined in Settings.xcconfig, currently set to '${J2OBJC_HOME}'\"; exit 1;\nfi;\n\n\"${J2OBJC_HOME}/j2objc\" -d ${DERIVED_FILES_DIR} -sourcepath \"${PROJECT_DIR}/Classes\" --no-package-directories -use-arc  --prefix src=JOE -g ${INPUT_FILE_PATH};";
 		};
 /* End PBXBuildRule section */
 
@@ -84,14 +84,14 @@
 		0683A313163DE1C800407C3A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3D9F90461934DA2F00738699 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Classes/en.lproj/J2RViewController_iPad.xib; sourceTree = SOURCE_ROOT; };
 		3D9F90481934DA2F00738699 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Classes/en.lproj/J2RViewController_iPhone.xib; sourceTree = SOURCE_ROOT; };
-		AA2B5EBA1F84B38A00133A49 /* Engine.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = Engine.java; path = Othello/Engine.java; sourceTree = SOURCE_ROOT; };
-		AA2B5EBB1F84B38A00133A49 /* Position.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = Position.java; path = Othello/Position.java; sourceTree = SOURCE_ROOT; };
-		AA2B5EBC1F84B38A00133A49 /* CommandInterfaceListener.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = CommandInterfaceListener.java; path = Othello/CommandInterfaceListener.java; sourceTree = SOURCE_ROOT; };
-		AA2B5EBD1F84B38A00133A49 /* CommandInterface.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = CommandInterface.java; path = Othello/CommandInterface.java; sourceTree = SOURCE_ROOT; };
-		AA2B5EBE1F84B38A00133A49 /* Move.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = Move.java; path = Othello/Move.java; sourceTree = SOURCE_ROOT; };
-		AA2B5EBF1F84B38A00133A49 /* Score.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = Score.java; path = Othello/Score.java; sourceTree = SOURCE_ROOT; };
-		AA2B5EC01F84B38A00133A49 /* Game.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = Game.java; path = Othello/Game.java; sourceTree = SOURCE_ROOT; };
-		AA2B5EC11F84B38A00133A49 /* SuperEngine.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = SuperEngine.java; path = Othello/SuperEngine.java; sourceTree = SOURCE_ROOT; };
+		AA2B5EEC1F84B57800133A49 /* Score.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = Score.java; path = src/Score.java; sourceTree = SOURCE_ROOT; };
+		AA2B5EED1F84B57800133A49 /* CommandInterfaceListener.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = CommandInterfaceListener.java; path = src/CommandInterfaceListener.java; sourceTree = SOURCE_ROOT; };
+		AA2B5EEE1F84B57800133A49 /* Move.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = Move.java; path = src/Move.java; sourceTree = SOURCE_ROOT; };
+		AA2B5EEF1F84B57900133A49 /* Position.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = Position.java; path = src/Position.java; sourceTree = SOURCE_ROOT; };
+		AA2B5EF01F84B57900133A49 /* SuperEngine.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = SuperEngine.java; path = src/SuperEngine.java; sourceTree = SOURCE_ROOT; };
+		AA2B5EF11F84B57900133A49 /* Game.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = Game.java; path = src/Game.java; sourceTree = SOURCE_ROOT; };
+		AA2B5EF21F84B57900133A49 /* CommandInterface.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = CommandInterface.java; path = src/CommandInterface.java; sourceTree = SOURCE_ROOT; };
+		AA2B5EF31F84B57900133A49 /* Engine.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; name = Engine.java; path = src/Engine.java; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,30 +119,6 @@
 			name = en.lproj;
 			path = Classes/en.lproj;
 			sourceTree = SOURCE_ROOT;
-		};
-		064E072D18E90BD400F5DF6B /* Othello */ = {
-			isa = PBXGroup;
-			children = (
-				064E072E18E90BD400F5DF6B /* Engine */,
-			);
-			name = Othello;
-			path = Classes/Othello;
-			sourceTree = SOURCE_ROOT;
-		};
-		064E072E18E90BD400F5DF6B /* Engine */ = {
-			isa = PBXGroup;
-			children = (
-				AA2B5EBD1F84B38A00133A49 /* CommandInterface.java */,
-				AA2B5EBC1F84B38A00133A49 /* CommandInterfaceListener.java */,
-				AA2B5EBA1F84B38A00133A49 /* Engine.java */,
-				AA2B5EC01F84B38A00133A49 /* Game.java */,
-				AA2B5EBE1F84B38A00133A49 /* Move.java */,
-				AA2B5EBB1F84B38A00133A49 /* Position.java */,
-				AA2B5EBF1F84B38A00133A49 /* Score.java */,
-				AA2B5EC11F84B38A00133A49 /* SuperEngine.java */,
-			);
-			path = Engine;
-			sourceTree = "<group>";
 		};
 		0679B6DD1801248900E81344 /* Graphics */ = {
 			isa = PBXGroup;
@@ -201,7 +177,7 @@
 				064E072918E90BD400F5DF6B /* J2RSquare.m */,
 				064E072A18E90BD400F5DF6B /* J2RViewController.h */,
 				064E072B18E90BD400F5DF6B /* J2RViewController.m */,
-				064E072D18E90BD400F5DF6B /* Othello */,
+				AA2B5EEB1F84B56D00133A49 /* src */,
 				3D441D721934BE230063E6FD /* Resources */,
 				0683A316163DE1C800407C3A /* Supporting Files */,
 			);
@@ -229,6 +205,21 @@
 			);
 			name = Resources;
 			path = Classes/en.lproj;
+			sourceTree = "<group>";
+		};
+		AA2B5EEB1F84B56D00133A49 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				AA2B5EF21F84B57900133A49 /* CommandInterface.java */,
+				AA2B5EED1F84B57800133A49 /* CommandInterfaceListener.java */,
+				AA2B5EF31F84B57900133A49 /* Engine.java */,
+				AA2B5EF11F84B57900133A49 /* Game.java */,
+				AA2B5EEE1F84B57800133A49 /* Move.java */,
+				AA2B5EEF1F84B57900133A49 /* Position.java */,
+				AA2B5EEC1F84B57800133A49 /* Score.java */,
+				AA2B5EF01F84B57900133A49 /* SuperEngine.java */,
+			);
+			name = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,19 +302,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2B5EF71F84B57900133A49 /* Position.java in Sources */,
+				AA2B5EF61F84B57900133A49 /* Move.java in Sources */,
 				064E073C18E90BD400F5DF6B /* J2RBoard.m in Sources */,
+				AA2B5EF81F84B57900133A49 /* SuperEngine.java in Sources */,
 				064E073F18E90BD400F5DF6B /* J2RViewController.m in Sources */,
-				AA2B5EC31F84B38A00133A49 /* Position.java in Sources */,
-				AA2B5EC41F84B38A00133A49 /* CommandInterfaceListener.java in Sources */,
+				AA2B5EF41F84B57900133A49 /* Score.java in Sources */,
 				064E073E18E90BD400F5DF6B /* J2RSquare.m in Sources */,
-				AA2B5EC71F84B38A00133A49 /* Score.java in Sources */,
-				AA2B5EC21F84B38A00133A49 /* Engine.java in Sources */,
-				AA2B5EC51F84B38A00133A49 /* CommandInterface.java in Sources */,
-				AA2B5EC91F84B38A00133A49 /* SuperEngine.java in Sources */,
+				AA2B5EF51F84B57900133A49 /* CommandInterfaceListener.java in Sources */,
 				064E073B18E90BD400F5DF6B /* J2RAppDelegate.m in Sources */,
-				AA2B5EC61F84B38A00133A49 /* Move.java in Sources */,
+				AA2B5EFA1F84B57900133A49 /* CommandInterface.java in Sources */,
 				064E074018E90BD400F5DF6B /* main.m in Sources */,
-				AA2B5EC81F84B38A00133A49 /* Game.java in Sources */,
+				AA2B5EF91F84B57900133A49 /* Game.java in Sources */,
+				AA2B5EFB1F84B57900133A49 /* Engine.java in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

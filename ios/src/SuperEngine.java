@@ -3,7 +3,7 @@
 // included in any product sold for profit without permission from
 // Mats Luthman.
 
-package Othello;
+package src;
 
 import java.util.Random;
 
